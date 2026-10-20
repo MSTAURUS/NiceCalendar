@@ -23,5 +23,14 @@ rm_root() {
 
 rm_root "${MODULE_DIR}/libnicecalendar.so"
 rm_root /usr/share/xfce4/panel/plugins/nicecalendar.desktop
+rm_root /usr/share/icons/hicolor/scalable/apps/nicecalendar.svg
+
+# refresh the icon caches, otherwise a stale entry keeps shadowing the icon
+if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+  gtk-update-icon-cache -f -t /usr/share/icons/hicolor 2>/dev/null || true
+  if [ -f "${PREFIX}/share/icons/hicolor/icon-theme.cache" ]; then
+    gtk-update-icon-cache -f -t "${PREFIX}/share/icons/hicolor" 2>/dev/null || true
+  fi
+fi
 
 echo "Uninstalled. Restart: xfce4-panel --quit; sleep 1; xfce4-panel &"

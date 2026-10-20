@@ -1,1 +1,4 @@
 NiceCalendar-vala.tar.gz
+/build/
+/build-deb/
+/dist/
