@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+
+  <object class="GtkDialog" id="settings_dialog">
+    <property name="title" translatable="yes">NiceCalendar Settings</property>
+    <property name="default-width">480</property>
+    <property name="default-height">480</property>
+    <property name="modal">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="visible">True</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="btn_reset">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Reset</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_close">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Close</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkNotebook" id="settings_notebook">
+            <property name="visible">True</property>
+
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="margin">12</property>
+
+                <child>
+                  <object class="GtkCheckButton" id="chk_show_date">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show date</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chk_show_time">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show time</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_order">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="date-time" translatable="yes">Date – Time</item>
+                      <item id="time-date" translatable="yes">Time – Date</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="ent_separator">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_date_format">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="%d.%m.%Y">%d.%m.%Y</item>
+                      <item id="%d/%m/%Y">%d/%m/%Y</item>
+                      <item id="%Y-%m-%d">%Y-%m-%d</item>
+                      <item id="%d %b">%d %b</item>
+                      <item id="%A, %d %B">%A, %d %B</item>
+                      <item id="__custom__" translatable="yes">Custom…</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="ent_date_format">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_time_format">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="%H:%M">%H:%M</item>
+                      <item id="%H:%M:%S">%H:%M:%S</item>
+                      <item id="%I:%M %p">%I:%M %p</item>
+                      <item id="%I:%M:%S %p">%I:%M:%S %p</item>
+                      <item id="__custom__" translatable="yes">Custom…</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="ent_time_format">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chk_seconds">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show seconds</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chk_12h">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">12-hour format</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chk_weekday">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show weekday</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chk_two_line">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Date and time on two lines</property>
+                  </object>
+                </child>
+
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Panel</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="margin">12</property>
+
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="spacing">8</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Date (panel)</property>
+                        <property name="xalign">0</property>
+                        <property name="width-chars">22</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkFontButton" id="fnt_date">
+                        <property name="visible">True</property>
+                        <property name="title" translatable="yes">Date font</property>
+                        <property name="hexpand">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="spacing">8</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Time (panel)</property>
+                        <property name="xalign">0</property>
+                        <property name="width-chars">22</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkFontButton" id="fnt_time">
+                        <property name="visible">True</property>
+                        <property name="title" translatable="yes">Time font</property>
+                        <property name="hexpand">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="spacing">8</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Calendar grid</property>
+                        <property name="xalign">0</property>
+                        <property name="width-chars">22</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkFontButton" id="fnt_calendar">
+                        <property name="visible">True</property>
+                        <property name="title" translatable="yes">Calendar grid font</property>
+                        <property name="hexpand">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="spacing">8</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Popup big time</property>
+                        <property name="xalign">0</property>
+                        <property name="width-chars">22</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkFontButton" id="fnt_popup_time">
+                        <property name="visible">True</property>
+                        <property name="title" translatable="yes">Popup big time font</property>
+                        <property name="hexpand">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Fonts</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="margin">12</property>
+
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_first_day">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="locale" translatable="yes">Locale</item>
+                      <item id="mon" translatable="yes">Monday</item>
+                      <item id="sun" translatable="yes">Sunday</item>
+                      <item id="sat" translatable="yes">Saturday</item>
+                    </items>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_background">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="theme" translatable="yes">System theme</item>
+                      <item id="custom" translatable="yes">Custom color</item>
+                      <item id="dark" translatable="yes">Dark</item>
+                      <item id="light" translatable="yes">Light</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColorButton" id="col_background">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_today_color">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="accent" translatable="yes">Accent</item>
+                      <item id="custom" translatable="yes">Custom</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColorButton" id="col_today">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkComboBoxText" id="cmb_selection_color">
+                    <property name="visible">True</property>
+                    <items>
+                      <item id="accent" translatable="yes">Accent</item>
+                      <item id="custom" translatable="yes">Custom</item>
+                    </items>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColorButton" id="col_selection">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkCheckButton" id="chk_adjacent">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show days of previous/next months (dimmed)</property>
+                    <property name="tooltip-text" translatable="yes">When enabled, the grid also shows days belonging to the previous and next months (at reduced opacity). When disabled, those cells stay empty.</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Calendar</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="margin">12</property>
+                <child>
+                  <object class="GtkCheckButton" id="chk_tooltip">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Show tooltip</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Misc</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

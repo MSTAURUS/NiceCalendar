@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+
+  <object class="GtkPopover" id="popup">
+    <property name="can_focus">True</property>
+    <child>
+      <object class="GtkBox" id="popup_box">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">8</property>
+        <property name="margin">12</property>
+        <property name="width-request">320</property>
+
+        <child>
+          <object class="GtkLabel" id="popup_big_time">
+            <property name="visible">True</property>
+            <property name="xalign">0.5</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel" id="popup_date_sub">
+            <property name="visible">True</property>
+            <property name="xalign">0.5</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkSeparator" id="popup_sep1">
+            <property name="visible">True</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkBox" id="popup_header">
+            <property name="visible">True</property>
+            <property name="orientation">horizontal</property>
+            <property name="spacing">4</property>
+
+            <child>
+              <object class="GtkLabel" id="popup_header_label">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="hexpand">True</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="popup_prev_btn">
+                <property name="visible">True</property>
+                <property name="label">‹</property>
+                <property name="relief">none</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="popup_next_btn">
+                <property name="visible">True</property>
+                <property name="label">›</property>
+                <property name="relief">none</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkGrid" id="popup_grid">
+            <property name="visible">True</property>
+            <property name="row-spacing">2</property>
+            <property name="column-spacing">2</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

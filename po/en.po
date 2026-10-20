@@ -1,0 +1,173 @@
+# English (base) translation for NiceCalendar.
+msgid ""
+msgstr ""
+"Project-Id-Version: nicecalendar 1.4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-01 00:00+0000\n"
+"PO-Revision-Date: 2026-10-01 00:00+0000\n"
+"Last-Translator: NiceCalendar Team <nicecalendar@example.invalid>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: nicecalendar/plugin.py
+msgid "Properties"
+msgstr "Properties"
+
+#: nicecalendar/plugin.py
+msgid "About"
+msgstr "About"
+
+#: nicecalendar/plugin.py
+msgid "Clock with a calendar popup in Windows 10 style"
+msgstr "Clock with a calendar popup in Windows 10 style"
+
+#: nicecalendar/popup.py
+msgid "Calendar"
+msgstr "Calendar"
+
+#: nicecalendar/popup.py
+msgid "Previous month"
+msgstr "Previous month"
+
+#: nicecalendar/popup.py
+msgid "Next month"
+msgstr "Next month"
+
+#: ui/settings.ui
+msgid "NiceCalendar Settings"
+msgstr "NiceCalendar Settings"
+
+#: ui/settings.ui
+msgid "Reset"
+msgstr "Reset"
+
+#: ui/settings.ui
+msgid "Close"
+msgstr "Close"
+
+#: ui/settings.ui
+msgid "Panel"
+msgstr "Panel"
+
+#: ui/settings.ui
+msgid "Show date"
+msgstr "Show date"
+
+#: ui/settings.ui
+msgid "Show time"
+msgstr "Show time"
+
+#: ui/settings.ui
+msgid "Date – Time"
+msgstr "Date – Time"
+
+#: ui/settings.ui
+msgid "Time – Date"
+msgstr "Time – Date"
+
+#: ui/settings.ui
+msgid "Custom…"
+msgstr "Custom…"
+
+#: ui/settings.ui
+msgid "Show seconds"
+msgstr "Show seconds"
+
+#: ui/settings.ui
+msgid "12-hour format"
+msgstr "12-hour format"
+
+#: ui/settings.ui
+msgid "Show weekday"
+msgstr "Show weekday"
+
+#: ui/settings.ui
+msgid "Fonts"
+msgstr "Fonts"
+
+#: ui/settings.ui
+msgid "Date font"
+msgstr "Date font"
+
+#: ui/settings.ui
+msgid "Time font"
+msgstr "Time font"
+
+#: ui/settings.ui
+msgid "Calendar grid font"
+msgstr "Calendar grid font"
+
+#: ui/settings.ui
+msgid "Popup big time font"
+msgstr "Popup big time font"
+
+#: ui/settings.ui
+msgid "Locale"
+msgstr "Locale"
+
+#: ui/settings.ui
+msgid "Monday"
+msgstr "Monday"
+
+#: ui/settings.ui
+msgid "Sunday"
+msgstr "Sunday"
+
+#: ui/settings.ui
+msgid "Saturday"
+msgstr "Saturday"
+
+#: ui/settings.ui
+msgid "System theme"
+msgstr "System theme"
+
+#: ui/settings.ui
+msgid "Custom color"
+msgstr "Custom color"
+
+#: ui/settings.ui
+msgid "Dark"
+msgstr "Dark"
+
+#: ui/settings.ui
+msgid "Light"
+msgstr "Light"
+
+#: ui/settings.ui
+msgid "Accent"
+msgstr "Accent"
+
+#: ui/settings.ui
+msgid "Custom"
+msgstr "Custom"
+
+#: ui/settings.ui
+msgid "Show days from adjacent months"
+msgstr "Show days from adjacent months"
+
+#: ui/settings.ui
+msgid "Misc"
+msgstr "Misc"
+
+#: ui/settings.ui
+msgid "Show tooltip"
+msgstr "Show tooltip"
+
+msgid "Date (panel)"
+msgstr "Date (panel)"
+
+msgid "Time (panel)"
+msgstr "Time (panel)"
+
+msgid "Calendar grid"
+msgstr "Calendar grid"
+
+msgid "Popup big time"
+msgstr "Popup big time"
+
+msgid "Date and time on two lines"
+msgstr "Date and time on two lines"

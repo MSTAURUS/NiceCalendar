@@ -1,0 +1,11 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=NiceCalendar
+Name[ru]=NiceCalendar
+Comment=Clock with a calendar popup in Windows 10 style
+Comment[ru]=Часы с всплывающим календарём в стиле Windows 10
+Icon=nicecalendar
+X-XFCE-Module=nicecalendar
+X-XFCE-Internal=true
+X-XFCE-API=2.0

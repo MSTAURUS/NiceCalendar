@@ -1,0 +1,180 @@
+# Русский перевод NiceCalendar.
+msgid ""
+msgstr ""
+"Project-Id-Version: nicecalendar 1.4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-01 00:00+0000\n"
+"PO-Revision-Date: 2026-10-01 00:00+0000\n"
+"Last-Translator: NiceCalendar Team <nicecalendar@example.invalid>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: nicecalendar/plugin.py
+msgid "Properties"
+msgstr "Свойства"
+
+#: nicecalendar/plugin.py
+msgid "About"
+msgstr "О программе"
+
+#: nicecalendar/plugin.py
+msgid "Clock with a calendar popup in Windows 10 style"
+msgstr "Часы с всплывающим календарём в стиле Windows 10"
+
+#: nicecalendar/popup.py
+msgid "Calendar"
+msgstr "Календарь"
+
+#: nicecalendar/popup.py
+msgid "Previous month"
+msgstr "Предыдущий месяц"
+
+#: nicecalendar/popup.py
+msgid "Next month"
+msgstr "Следующий месяц"
+
+#: ui/settings.ui
+msgid "NiceCalendar Settings"
+msgstr "Настройки NiceCalendar"
+
+#: ui/settings.ui
+msgid "Reset"
+msgstr "Сбросить"
+
+#: ui/settings.ui
+msgid "Close"
+msgstr "Закрыть"
+
+#: ui/settings.ui
+msgid "Panel"
+msgstr "Панель"
+
+#: ui/settings.ui
+msgid "Show date"
+msgstr "Показывать дату"
+
+#: ui/settings.ui
+msgid "Show time"
+msgstr "Показывать время"
+
+#: ui/settings.ui
+msgid "Date – Time"
+msgstr "Дата – Время"
+
+#: ui/settings.ui
+msgid "Time – Date"
+msgstr "Время – Дата"
+
+#: ui/settings.ui
+msgid "Custom…"
+msgstr "Свой формат…"
+
+#: ui/settings.ui
+msgid "Show seconds"
+msgstr "Показывать секунды"
+
+#: ui/settings.ui
+msgid "12-hour format"
+msgstr "12-часовой формат"
+
+#: ui/settings.ui
+msgid "Show weekday"
+msgstr "Показывать день недели"
+
+#: ui/settings.ui
+msgid "Fonts"
+msgstr "Шрифты"
+
+#: ui/settings.ui
+msgid "Date font"
+msgstr "Шрифт даты"
+
+#: ui/settings.ui
+msgid "Time font"
+msgstr "Шрифт времени"
+
+#: ui/settings.ui
+msgid "Calendar grid font"
+msgstr "Шрифт календаря (сетки)"
+
+#: ui/settings.ui
+msgid "Popup big time font"
+msgstr "Шрифт крупного времени в поповере"
+
+#: ui/settings.ui
+msgid "Locale"
+msgstr "Локаль"
+
+#: ui/settings.ui
+msgid "Monday"
+msgstr "Понедельник"
+
+#: ui/settings.ui
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: ui/settings.ui
+msgid "Saturday"
+msgstr "Суббота"
+
+#: ui/settings.ui
+msgid "System theme"
+msgstr "Системная тема"
+
+#: ui/settings.ui
+msgid "Custom color"
+msgstr "Свой цвет"
+
+#: ui/settings.ui
+msgid "Dark"
+msgstr "Тёмная"
+
+#: ui/settings.ui
+msgid "Light"
+msgstr "Светлая"
+
+#: ui/settings.ui
+msgid "Accent"
+msgstr "Акцент"
+
+#: ui/settings.ui
+msgid "Custom"
+msgstr "Свой"
+
+#: ui/settings.ui
+msgid "Show days from adjacent months"
+msgstr "Показывать дни соседних месяцев"
+
+#: ui/settings.ui
+msgid "Misc"
+msgstr "Разное"
+
+#: ui/settings.ui
+msgid "Show tooltip"
+msgstr "Показывать всплывающую подсказку"
+
+msgid "Date (panel)"
+msgstr "Дата (панель)"
+
+msgid "Time (panel)"
+msgstr "Время (панель)"
+
+msgid "Calendar grid"
+msgstr "Сетка календаря"
+
+msgid "Popup big time"
+msgstr "Крупное время в окне"
+
+msgid "Date and time on two lines"
+msgstr "Дата и время в две строки"
+
+msgid "Show days of previous/next months (dimmed)"
+msgstr "Показывать дни соседних месяцев (приглушённо)"
+
+msgid "When enabled, the grid also shows days belonging to the previous and next months (at reduced opacity). When disabled, those cells stay empty."
+msgstr "Если включено, в сетке видны дни прошлого и следующего месяцев (полупрозрачно). Если выключено — эти ячейки пустые."

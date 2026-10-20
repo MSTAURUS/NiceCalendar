@@ -1,0 +1,7 @@
+# Files scanned for translatable strings.
+nicecalendar/plugin.py
+nicecalendar/popup.py
+nicecalendar/settings_dialog.py
+ui/panel.ui
+ui/popup.ui
+ui/settings.ui
