@@ -27,3 +27,5 @@ Dependencies: `libxfce4panel-2.0`, `libxfconf-0`, `gtk+-3.0`, Vala, Meson.
 - Desktop: `$datadir/xfce4/panel/plugins/nicecalendar.desktop`
 - UI: `$datadir/nicecalendar/ui/`
 - Icon: `$datadir/icons/hicolor/scalable/apps/nicecalendar.svg`
+
+<center><img width="345" height="363" alt="изображение" src="https://github.com/user-attachments/assets/6587f520-06f9-49f7-a4a3-a43a4f964f4a"/></center>
