@@ -63,8 +63,20 @@ install_as_root "${ROOT}/data/nicecalendar.desktop" \
   "${SYS_DESKTOP_DIR}/nicecalendar.desktop" 644
 echo "Desktop → ${SYS_DESKTOP_DIR}/nicecalendar.desktop"
 
+# Icon — installed system-wide, the panel plugin list looks it up by name.
+# Installing it into ~/.local/share/icons/hicolor creates a theme dir without
+# index.theme whose cache shadows the system theme, so keep it in /usr/share.
+SYS_ICON_DIR="/usr/share/icons/hicolor/scalable/apps"
+install_as_root "${ROOT}/data/icons/nicecalendar.svg" \
+  "${SYS_ICON_DIR}/nicecalendar.svg" 644
+echo "Icon    → ${SYS_ICON_DIR}/nicecalendar.svg"
+
 if command -v gtk-update-icon-cache >/dev/null 2>&1; then
-  gtk-update-icon-cache -f -t "${USER_PREFIX}/share/icons/hicolor" 2>/dev/null || true
+  gtk-update-icon-cache -f -t /usr/share/icons/hicolor 2>/dev/null || true
+  # drop a stale user cache that may still point at a removed icon
+  if [ -f "${USER_PREFIX}/share/icons/hicolor/icon-theme.cache" ]; then
+    gtk-update-icon-cache -f -t "${USER_PREFIX}/share/icons/hicolor" 2>/dev/null || true
+  fi
 fi
 
 

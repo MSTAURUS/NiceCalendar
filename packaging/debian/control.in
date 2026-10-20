@@ -1,0 +1,14 @@
+Package: @PKG_NAME@
+Version: @VERSION@
+Section: xfce
+Priority: optional
+Architecture: @ARCH@
+Depends: libgtk-3-0 (>= 3.24), libglib2.0-0, libxfce4panel-2.0-4 | libxfce4panel-2.0-2, libxfce4util7, libxfconf-0-3, xfce4-panel
+Maintainer: MS_TAURUS <ms_taurus@mali.ru>
+Homepage: https://github.com/MSTAURUS/NiceCalendar
+Description: NiceCalendar - clock with a calendar popup for the Xfce panel
+ NiceCalendar is an internal Xfce panel plugin (Vala/GTK3) that shows a clock
+ with a Windows 10 style calendar popup: month grid, today highlighting and
+ quick navigation between months.
+ .
+ The plugin ships translations for English and Russian.

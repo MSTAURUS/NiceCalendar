@@ -14,6 +14,21 @@ sudo meson install -C build
 
 Dependencies: `libxfce4panel-2.0`, `libxfconf-0`, `gtk+-3.0`, Vala, Meson.
 
+## Debian package
+
+```bash
+./packaging/build-deb.sh          # -> dist/nicecalendar_<version>_amd64.deb
+```
+
+The version is taken from `meson.build`. Package metadata lives in
+`packaging/debian/control.in`.
+
+## CI
+
+`.github/workflows/build-deb.yml` builds the `.deb` on every push to `master`
+(artifact in the run summary) and attaches it to a GitHub Release when a
+`v*` tag is pushed.
+
 ## Structure
 
 - `src/calendar_grid.vala`, `utils.vala` — pure logic (no GTK)
